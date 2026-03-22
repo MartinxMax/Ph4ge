@@ -8,6 +8,8 @@ This is a remote desktop injection tool based on the *MS17-010* vulnerability, d
 3.Automated heap spraying and detection – improves exploit reliability and hit rate.
 4.Automatic logging of successfully injected hosts – helps maintain stability on compromised systems and reduces the likelihood of crashes.
 
+Note: If you run this program on the target machine (and the operating system version is too low), SMB verification may fail to function. This means the exploitation might take effect, but it will be impossible to verify whether the injection was successful. Therefore, it is recommended to terminate the program after 3 rounds of spraying, then manually verify the remote connection.
+
 ![alt text](./pic/LOGO.png)
 
 
